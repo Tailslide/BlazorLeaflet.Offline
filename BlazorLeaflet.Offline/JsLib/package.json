@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tailslide/blazorleafletoffline.git"
+    "url": "git+https://github.com/Tailslide/BlazorLeaflet.Offline.git"
   },
   "author": "",
   "license": "ISC",
