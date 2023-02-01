@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Principleworx</Company>
+    <Description>Blazor wrapper for https://github.com/allartk/leaflet.offline </Description>
+    <PackageProjectUrl>https://gitlab.com/marsworx/blazor/mw-blazorleaflet-offline</PackageProjectUrl>
+    <Authors>Greg Pringle</Authors>
+    <RepositoryUrl>https://gitlab.com/marsworx/blazor/mw-blazorleaflet-offline</RepositoryUrl>
+    <ApplicationIcon>marsworx.ico</ApplicationIcon>
+    <Version>1.0.15</Version>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="JsLib\node_modules\**" />
+    <Content Remove="JsLib\node_modules\**" />
+    <EmbeddedResource Remove="JsLib\node_modules\**" />
+    <None Remove="JsLib\node_modules\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="cd JsLib&#xD;&#xA;npm install&#xD;&#xA;cd ..&#xD;&#xA;" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="cd JsLib&#xD;&#xA;npm run build&#xD;&#xA;cd ..&#xD;&#xA;" />
+  </Target>
+
+</Project>

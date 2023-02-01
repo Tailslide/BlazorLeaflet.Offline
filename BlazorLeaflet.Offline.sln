@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31320.298
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorLeaflet.Offline", "BlazorLeaflet.Offline\BlazorLeaflet.Offline.csproj", "{F5C13D43-84C7-4CE4-BE56-43F1EF91E70E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorLeaflet.Offline.Sample", "BlazorLeaflet.Offline.Sample\BlazorLeaflet.Offline.Sample.csproj", "{7E8F5288-8E03-412C-9CB4-C16FD592D00B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5C13D43-84C7-4CE4-BE56-43F1EF91E70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C13D43-84C7-4CE4-BE56-43F1EF91E70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C13D43-84C7-4CE4-BE56-43F1EF91E70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C13D43-84C7-4CE4-BE56-43F1EF91E70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8F5288-8E03-412C-9CB4-C16FD592D00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8F5288-8E03-412C-9CB4-C16FD592D00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8F5288-8E03-412C-9CB4-C16FD592D00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8F5288-8E03-412C-9CB4-C16FD592D00B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B631BB22-BBD6-4383-90A4-FD1761CFD0A1}
+	EndGlobalSection
+EndGlobal

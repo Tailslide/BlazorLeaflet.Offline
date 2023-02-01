@@ -1,0 +1,29 @@
+{
+  "name": "jslib",
+  "version": "1.0.0",
+  "description": "Wrapper for Blazor javascript controls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Tailslide/blazorleafletoffline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "idb": "^6.1.2",
+    "jquery": "^3.6.0",
+    "leaflet": "^1.7.1",
+    "leaflet.offline.tailslide": "^2.0.0-beta.5",
+    "pressure": "^2.2.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "babel-loader": "^8.2.2"
+  }
+}
