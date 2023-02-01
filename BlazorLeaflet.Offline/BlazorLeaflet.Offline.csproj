@@ -2,14 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Company>Principleworx</Company>
     <Description>Blazor wrapper for https://github.com/allartk/leaflet.offline </Description>
-    <PackageProjectUrl>https://gitlab.com/marsworx/blazor/mw-blazorleaflet-offline</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Tailslide/BlazorLeaflet.Offline</PackageProjectUrl>
     <Authors>Greg Pringle</Authors>
-    <RepositoryUrl>https://gitlab.com/marsworx/blazor/mw-blazorleaflet-offline</RepositoryUrl>
-    <ApplicationIcon>marsworx.ico</ApplicationIcon>
-    <Version>1.0.15</Version>
+    <RepositoryUrl>https://github.com/Tailslide/BlazorLeaflet.Offline</RepositoryUrl>
+    <Version>1.1.0</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
 

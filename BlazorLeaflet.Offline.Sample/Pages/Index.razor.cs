@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Telerik.Blazor;
-using Telerik.Blazor.Components;
 
 namespace BlazorLeaflet.Offline.Sample.Pages
 {
@@ -13,8 +11,6 @@ namespace BlazorLeaflet.Offline.Sample.Pages
     {
         [Inject]
         public BlazorLeafletOfflineService BlazorLeafletOffline { get; set; }
-
-        TelerikContextMenu<MenuItem> TheContextMenu { get; set; }
 
         public List<MenuItem> MenuItems { get; set; }
 
@@ -28,30 +24,7 @@ namespace BlazorLeaflet.Offline.Sample.Pages
             public string MyIconClass { get; set; }
         }
 
-        [CascadingParameter]
-        public DialogFactory Dialogs { get; set; }
-
         private int markerCount = 0;
-
-        protected async Task OnItemClick(MenuItem item)
-        {
-            
-            if (await Dialogs.ConfirmAsync($"TODO: Open dialog with Lat={lat} Long={lng}"))
-            {
-                markerCount++;
-                string carsvg = $"<svg id='drive-{markerCount}' onclick='window.leafletElementClicked(\"drive-{markerCount}\");' xmlns='http://www.w3.org/2000/svg' style='position: fixed;right: 20px;' height='24px' viewBox='0 0 24 24' width='24px' fill='#000000'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z'/><circle cx='7.5' cy='14.5' r='1.5'/><circle cx='16.5' cy='14.5' r='1.5'/></svg>";
-                string editsvg = $"<svg id='edit-{markerCount}' onclick='window.leafletElementClicked(\"edit-{markerCount}\");' xmlns='http://www.w3.org/2000/svg'  height='24px' viewBox='0 0 24 24' width='24px' fill='#000000'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z'/></svg>";
-                await BlazorLeafletOffline.AddMarker(new Marker()
-                {
-                    Lat = lat,
-                    Long = lng,
-
-                PopupHtml = $"WO-123456 *new*<br/><hr/>{editsvg}{carsvg}"
-                }
-                );
-            }
-
-        }
 
         public string Message { get; set; }
         private Random random = new Random();
@@ -100,8 +73,8 @@ namespace BlazorLeaflet.Offline.Sample.Pages
             bool touched = re.EnumerateObject().Single(x => x.Name == "touchPress").Value.GetBoolean();
             if (touched)
             {
-                //Console.WriteLine("Blazor TODO: open a context menu for " + asstring);
-                TheContextMenu.ShowAsync(clientX, clientY).Wait();
+                Console.WriteLine("Blazor TODO: open a context menu for " + asstring);
+                //TheContextMenu.ShowAsync(clientX, clientY).Wait();
                 
             }
 

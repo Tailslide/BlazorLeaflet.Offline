@@ -1,14 +1,5 @@
 ﻿@page "/"
 @inject HttpClient Http
-<TelerikContextMenu Selector="#map"
-                    OnClick="@(async (MenuItem item) => OnItemClick(item))"
-                    Data="@MenuItems"
-                     @ref="@TheContextMenu"
-                    IconField="@nameof(MenuItem.TelerikIcon)"
-                    ImageUrlField="@nameof(MenuItem.MyImage)"
-                    IconClassField="@nameof(MenuItem.MyIconClass)">
-</TelerikContextMenu>
-
 <div>@Message</div>
 
 @*<button @onclick="TestClick">Click here to test</button>
