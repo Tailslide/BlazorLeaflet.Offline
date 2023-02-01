@@ -1,5 +1,5 @@
-﻿import LeafletOffline from 'leaflet.offline.tailslide';
-import { getStorageInfo, getStoredTilesAsJson, saveTile } from 'leaflet.offline.tailslide';
+﻿import LeafletOffline from 'leaflet.offline';
+import { getStorageInfo, getStoredTilesAsJson, saveTile } from 'leaflet.offline';
 import Pressure from 'pressure';
 import $ from "jquery";
 
