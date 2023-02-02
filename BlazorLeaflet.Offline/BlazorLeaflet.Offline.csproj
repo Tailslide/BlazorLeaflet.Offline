@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Description>Blazor wrapper for https://github.com/allartk/leaflet.offline </Description>
+    <Description>Blazor wrapper for https://github.com/Tailslide/leaflet.offline </Description>
     <PackageProjectUrl>https://github.com/Tailslide/BlazorLeaflet.Offline</PackageProjectUrl>
     <Authors>Greg Pringle</Authors>
     <RepositoryUrl>https://github.com/Tailslide/BlazorLeaflet.Offline</RepositoryUrl>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
 

@@ -17,7 +17,7 @@
     "idb": "^6.1.2",
     "jquery": "^3.6.0",
     "leaflet": "^1.7.1",
-    "leaflet.offline": "^3.0.0",
+    "leaflet.offline.tailslide": "^2.0.0-beta.6",
     "pressure": "^2.2.0",
     "webpack": "^5.39.1",
     "webpack-cli": "^4.7.2"

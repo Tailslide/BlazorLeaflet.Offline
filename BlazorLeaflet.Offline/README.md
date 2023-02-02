@@ -1,4 +1,4 @@
 # BlazorLeafletOffline
-Blazor Wrapper for allartk/leaflet.offline
+Blazor Wrapper for Tailslide/leaflet.offline
 
 

@@ -1,6 +1,6 @@
 # BlazorMarker
-Blazor Wrapper for ailon/markerjs2
+Blazor Wrapper for https://github.com/Tailslide/leaflet.offline
 
-## Dev Notes - Updating markerjs2 
+## Dev Notes - Updating  
 
-To update this project to the latest markerjs2 you need to just build.. it grabs new by default every time.
+To update this project to the latest you need to just build.. it grabs new npm by default every time.
